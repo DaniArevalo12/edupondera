@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Bienvenida from './components/Bienvenida';
+import RegistroMateria from './components/RegistroMateria'; // Lo agregaremos luego
 
 function App() {
+  const [pantalla, setPantalla] = useState('bienvenida');
+
+  const manejarAgregarMateria = () => {
+    setPantalla('registro-materia');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {pantalla === 'bienvenida' && <Bienvenida onAgregarMateria={manejarAgregarMateria} />}
+      {pantalla === 'registro-materia' && <RegistroMateria />}
     </div>
   );
 }
