@@ -1,0 +1,56 @@
+.materias-container {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .search-bar input {
+    width: 90%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .lista-materias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .tarjeta-materia {
+    height: 100px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 1px 3px black;
+  }
+  
+  .boton-agregar {
+    background-color: #ccc;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .tarjeta-materia {
+    height: 100px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 1px 3px black;
+  }
+  
