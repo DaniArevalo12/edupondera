@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Bienvenida from './components/Bienvenida';
-import RegistroMateria from './components/RegistroMateria'; // Lo agregaremos luego
+import RegistroMateria from './components/RegistroMateria'; 
 
 function App() {
   const [pantalla, setPantalla] = useState('bienvenida');
