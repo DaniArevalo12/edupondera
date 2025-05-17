@@ -24,6 +24,9 @@ export default function Bienvenida({ onMateriasActualizadas }) {
   return (
     
     <div className="bienvenida-container">
+      <div className="search-bar">
+        <input type="text" placeholder="Search" disabled />
+      </div>
       <h2>Bienvenido Estudiante</h2>
       <p className="mensaje">
         Agrega aquí tus materias para que podamos ayudarte a generar tu promedio actual y tu proyección deseada.

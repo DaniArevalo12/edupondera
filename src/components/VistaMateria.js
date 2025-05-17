@@ -4,9 +4,6 @@ import '../styles/VistaMateria.css';
 export default function VistaMaterias({ materias, onAgregar, onSeleccionar }) {
   return (
     <div className="materias-container">
-      <div className="search-bar">
-        <input type="text" placeholder="Search" disabled />
-      </div>
 
       <div className="lista-materias">
         {materias.map((materia) => (
